@@ -19,7 +19,6 @@ public class MedicationService {
     private MedicationRepository medicationRepository;
     @Autowired
     private ActivityLogRepository activityLogRepository;
-
     public List<MedicationDto> get( String patientId,String agencyId,String agencyName) {
         List<Medication> medicationsList = medicationRepository.findAllByPatientIdOrderByDateDesc(patientId);
         List<MedicationDto> medicationDtoList = new ArrayList<>();
