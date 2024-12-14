@@ -15,6 +15,7 @@ public class ResponseResult<T> {
         return new ResponseResult<>(true, null, obj);
     }
 
+    
     public static  <TData> ResponseResult<TData> FailedResult(String message){
         return new ResponseResult<>(false, message
                 , null);

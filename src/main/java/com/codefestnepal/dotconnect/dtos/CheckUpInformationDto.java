@@ -6,6 +6,7 @@ import jakarta.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.util.Date;
 
+
 public class CheckUpInformationDto {
     @NotNull
     @NotBlank

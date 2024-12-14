@@ -10,6 +10,7 @@ public class ActivityLogDto {
     private LocalDate dateTime;
     private String type;
 
+
     public String getId() {
         return id;
     }
