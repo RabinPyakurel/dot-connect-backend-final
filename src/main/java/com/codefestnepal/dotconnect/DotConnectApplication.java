@@ -15,7 +15,6 @@ public class DotConnectApplication implements CommandLineRunner {
     @Autowired
     private PasswordEncoder encoder;
 
-
     public static void main(String[] args) {
         SpringApplication.run(DotConnectApplication.class, args);
 
@@ -49,6 +48,7 @@ public class DotConnectApplication implements CommandLineRunner {
         agency3.setPassword(encoder.encode("Us123456"));
         agency3.setPhone("01502042");
         agency3.setAccess("Read");
+
         Agency agency4 = new Agency();
         agency4.setAgencyId("f6e6f884-4a73-4ce5-b126-1bd93021f636");
         agency4.setName("Nepal life Insurance");
